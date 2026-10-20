@@ -1,70 +1,80 @@
 /**
  * CLIENT CONFIGURATION
  * --------------------
- * Change client-specific content here. Keep quotation marks and commas intact.
- * File paths are relative so this template works inside /khwahish/ or any folder.
+ * Wedding of Sana & Arbaz
  */
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Hiba & Zain — Baat Pakki Invitation",
+    title: "Sana & Arbaz — Wedding & Nikah Invitation",
     description:
-      "You are warmly invited to celebrate the Baat Pakki of Hiba Fatima and Zain Ahmed.",
+      "Mrs. Shahnaz & Mr. Riyaz Naik request the honour of your presence on the auspicious occasion of the wedding ceremony of their beloved daughter Sana with Arbaz.",
   },
 
   couple: {
-    brideInitial: "Z",
-    groomInitial: "Z",
+    brideInitial: "S",
+    groomInitial: "A",
     bride: {
-      name: "Zoya Khan",
-      shortName: "Zoya",
-      relation: "Daughter of",
-      parents: "Rashid Khan & Farida Begum",
+      name: "Sana",
+      shortName: "Sana",
+      relation: "D/o.",
+      parents: "Mrs. Shahnaz & Mr. Riyaz Naik",
     },
     groom: {
-      name: "Shaikh Zaid",
-      shortName: "Zaid",
-      relation: "Son of",
-      parents: "Shaikh Tariq & Shabana Begum",
+      name: "Arbaz",
+      shortName: "Arbaz",
+      relation: "S/o.",
+      parents: "Mrs. Jaitun & Mr. Gulab Mujawar",
     },
+  },
+
+  blessings: {
+    title: "With the Heavenly blessings of",
+    elders: [
+      "Late Tahira & Late Suleman Naik",
+      "Late Halima & Late Babamiya Pathan",
+    ],
+  },
+
+  hosts: {
+    parents: "Mrs. Shahnaz & Mr. Riyaz Naik",
+    invitation:
+      "Request the honour of your presence on the auspicious occasion of the wedding ceremony of their beloved daughter",
   },
 
   copy: {
     bismillah: "﷽",
     bismillahTranslation:
-      "",
-    welcomeLine: "With joyful hearts, we invite you\nto the Baat Pakki of",
-    invitation:
-      "",
+      "In the name of Allah, the most beneficent and the most merciful",
+    welcomeLine:
+      "Mrs. Shahnaz & Mr. Riyaz Naik\nrequest the honour of your presence at the wedding of",
+    invitation: "",
     heroClosing: "",
-    welcomeTitle: "Beautiful Beginning",
+    welcomeTitle: "With Heavenly Blessings",
     welcomeBody:
-      "With hearts full of joy, our families warmly invite you to celebrate this cherished evening of promises, blessings, and togetherness.",
+      "Mrs. Shahnaz & Mr. Riyaz Naik request the honour of your presence on the auspicious occasion of the wedding ceremony of their beloved daughter Sana with Arbaz.",
     gifts:
-      "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
-    closing: "We can’t wait to celebrate this special beginning with you.",
+      "Your love, prayers, and presence are the greatest gifts for the bride and groom.",
+    closing: "We can't wait to celebrate this special beginning with you.",
     dua: "بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
     duaTranslation:
       "May Allah bless you both, shower His blessings upon you, and join you together in goodness.",
   },
 
   wedding: {
-    // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2026-10-18T19:00:00+05:30",
-    date: "October 18, 2026",
-    day: "Sunday",
-    time: "07:00 PM",
+    // English date countdown: Wednesday, 18th November 2026 at 11:00 AM IST
+    isoDate: "2026-11-18T11:00:00+05:30",
+    date: "November 18, 2026",
+    day: "Wednesday",
+    time: "11:00 AM",
+    hijriDate: "8th Jamad-ul-Akhirah 1448 Hijri",
     timezone: "IST",
   },
 
   media: {
-    // Replace these two files inside the /media folder.
     introVideo: "./media/intro-placeholder.mp4",
-    introPoster:
-      "./media/intro-placeholder.webp",
+    introPoster: "./media/intro-placeholder.png",
     music: "./bismillah.mp3",
-
-    // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
       {
         src: "./media/gallery/01.webp",
@@ -86,67 +96,85 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
-      time: "6:30 PM",
-      title: "Guest Arrival",
-      note: "Welcome refreshments",
+      time: "04:00 PM",
+      title: "Insha Allah Rasm-e-Mehendi",
+      note: "Tuesday, 17th November 2026 (7th Jamad-ul-Akhirah 1448 Hijri)\nThereafter dinner at the residence",
     },
     {
-      time: "07:00 PM",
-      title: "Baat Pakki Ceremony",
-      note: "Promises shared with family blessings",
+      time: "11:00 AM",
+      title: "Insha Allah Nikah",
+      note: "Wednesday, 18th November 2026 (8th Jamad-ul-Akhirah 1448 Hijri)\nLunch will be served after nikah",
+    },
+  ],
+
+  preWeddingEvents: [
+    {
+      name: "Insha Allah Rasm-e-Mehendi",
+      date: "Tuesday, 17th November 2026",
+      time: "04:00 PM",
+      location: "At Residence (Dinner thereafter)",
+      mapLink:
+        "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+415626/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
     },
     {
-      time: "07:30 PM",
-      title: "Family Blessings",
-      note: "Greetings & photographs",
-    },
-    {
-      time: "08:00 PM",
-      title: "Dinner",
-      note: "A feast shared with love",
+      name: "Insha Allah Nikah",
+      date: "Wednesday, 18th November 2026",
+      time: "11:00 AM",
+      location: "At Moor Muslimwadi (Lunch after nikah)",
+      mapLink:
+        "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+415626/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
     },
   ],
 
   venue: {
-    name: "Noor Invites",
-    address:
-      "Mahal, Nagpur",
-    mapUrl: "https://maps.app.goo.gl/9SjDC3RRg9jHZty59",
+    name: "At Moor Muslimwadi",
+    address: "Post Moor, Muslimwadi, Maharashtra 415626",
+    mapUrl:
+      "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+415626/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
+    contacts: [
+      { name: "Riyaz Naik", phone: "9403805932" },
+      { name: "Munaf", phone: "7588616478" },
+    ],
   },
 
-dressCode: {
-  title: "Festive Formal",
-  description:
-    "Traditional or formal attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, suits, and formal dresses are all welcome. We kindly ask guests to avoid overly casual attire and white or ivory.",
-  swatches: [
-    "#5D4C3E",
-    "#8F917D",
-    "#AE845E",
-    "#8C6254",
-    "#D8C7B5",
-  ],
-},
+  compliments: "Jamatul Mulimeen Moor, Naik Families, Relative & Friends",
 
-  preWeddingEvents: [],
+  littleInvites: {
+    names: "Azlaan & Amairah",
+    message: "Hamari Khalajaan ki shaadi me zarur ana",
+  },
+
+  dressCode: {
+    title: "Festive Formal",
+    description:
+      "Traditional or formal wedding attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, and suits are warmly welcomed.",
+    swatches: [
+      "#800D20",
+      "#A3283B",
+      "#C59B63",
+      "#F5EAE6",
+      "#FAF7F0",
+    ],
+  },
 
   rsvp: {
-    deadline: "Kindly respond by September 15, 2026",
-    contact: "For assistance, call +91 98765 43210",
+    deadline: "Kindly respond by November 10, 2026",
+    contact: "For assistance, call Riyaz Naik: 9403805932 | Munaf: 7588616478",
     fields: {
       name: "Your full name",
-      email: "Email address",
+      email: "Email address or phone",
       attendance: ["Joyfully accepts", "Regretfully declines"],
-      guests: ["1 guest", "2 guests", "3 guests", "4 guests"],
-      note: "Dietary notes or a message for the couple",
+      guests: ["1 guest", "2 guests", "3 guests", "4+ guests"],
+      note: "Blessings & wishes for Sana & Arbaz",
     },
   },
 
-theme: {
-  ivory: "#F3F0E9",       /* pearl bridal ivory */
-  plum: "#5D4C3E",        /* deep warm cocoa */
-  lavender: "#D8C7B5",    /* champagne blush */
-  mauve: "#8C6254",       /* readable dusty rose */
-  lilac: "#8F917D",       /* muted sage */
-  champagne: "#AE845E",   /* antique gold */
-},
+  theme: {
+    ivory: "#FAF7F0",       /* warm bridal ivory */
+    plum: "#800D20",        /* royal cherry red */
+    lavender: "#F5EAE6",    /* soft blush porcelain */
+    mauve: "#A3283B",       /* rich berry / cherry rose */
+    lilac: "#EFE3DE",       /* soft rose mist */
+    champagne: "#C59B63",   /* antique gold accent */
+  },
 };

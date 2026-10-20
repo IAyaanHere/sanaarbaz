@@ -251,6 +251,7 @@ function renderPreWeddingEvents() {
 
   function renderDressPalette() {
     const palette = select("#dressPalette");
+    if (!palette) return;
 
     config.dressCode.swatches.forEach((color, index) => {
       const swatch = createElement("i");
@@ -492,7 +493,7 @@ audio.play()
   const height = rect.height;
 
   /* =========================
-     BURGUNDY BASE
+     CHERRY RED BASE
      ========================= */
 
   const gradient = context.createLinearGradient(
@@ -502,10 +503,10 @@ audio.play()
     height,
   );
 
-  gradient.addColorStop(0, config.theme.ivory);
-  gradient.addColorStop(0.45, config.theme.lavender);
-  gradient.addColorStop(0.72, config.theme.lavender);
-  gradient.addColorStop(1, config.theme.mauve);
+  gradient.addColorStop(0, "#8B1224");
+  gradient.addColorStop(0.35, "#A81E35");
+  gradient.addColorStop(0.7, config.theme.plum || "#800D20");
+  gradient.addColorStop(1, "#5E0715");
 
   context.globalCompositeOperation = "source-over";
   context.globalAlpha = 1;
@@ -526,9 +527,9 @@ audio.play()
   );
 
   shimmer.addColorStop(0, "rgba(255,255,255,0)");
-  shimmer.addColorStop(0.35, "rgba(228,218,205,0.08)");
-  shimmer.addColorStop(0.5, "rgba(255,255,255,0.13)");
-  shimmer.addColorStop(0.65, "rgba(216,199,181,0.07)");
+  shimmer.addColorStop(0.35, "rgba(255,225,185,0.12)");
+  shimmer.addColorStop(0.5, "rgba(255,245,230,0.22)");
+  shimmer.addColorStop(0.65, "rgba(255,215,175,0.1)");
   shimmer.addColorStop(1, "rgba(255,255,255,0)");
 
   context.fillStyle = shimmer;
@@ -548,19 +549,15 @@ audio.play()
     const x = Math.random() * width;
     const y = Math.random() * height;
 
-    const size = 0.25 + Math.random() * 1.15;
-    const brightness = 0.15 + Math.random() * 0.55;
+    const size = 0.3 + Math.random() * 1.15;
+    const brightness = 0.2 + Math.random() * 0.6;
 
     context.globalAlpha = brightness;
 
-    /*
-      Mostly champagne,
-      with occasional ivory sparkles.
-    */
     context.fillStyle =
-      Math.random() > 0.18
+      Math.random() > 0.2
         ? config.theme.champagne
-        : config.theme.ivory;
+        : "#FFE39F";
 
     context.beginPath();
     context.arc(
@@ -590,14 +587,14 @@ audio.play()
     const size = 1 + Math.random() * 2.1;
 
     context.globalAlpha =
-      0.3 + Math.random() * 0.5;
+      0.35 + Math.random() * 0.55;
 
     context.strokeStyle =
       Math.random() > 0.25
         ? config.theme.champagne
-        : config.theme.ivory;
+        : "#FFF0D0";
 
-    context.lineWidth = 0.55;
+    context.lineWidth = 0.6;
 
     context.beginPath();
 
@@ -622,9 +619,9 @@ audio.play()
     const y = Math.random() * height;
 
     context.globalAlpha =
-      0.06 + Math.random() * 0.1;
+      0.08 + Math.random() * 0.12;
 
-    context.fillStyle = config.theme.ivory;
+    context.fillStyle = "#FFE8C2";
 
     context.fillRect(
       x,
@@ -744,21 +741,24 @@ function createPetalShower({ mode = "celebration" } = {}) {
 
   const rootStyles = getComputedStyle(document.documentElement);
 
+  const plum =
+    rootStyles.getPropertyValue("--plum").trim() || "#800D20";
+
   const mauve =
-    rootStyles.getPropertyValue("--mauve").trim() || "#8C6254";
+    rootStyles.getPropertyValue("--mauve").trim() || "#A3283B";
 
   const lavender =
-    rootStyles.getPropertyValue("--lavender").trim() || "#D8C7B5";
+    rootStyles.getPropertyValue("--lavender").trim() || "#F5EAE6";
 
   const champagne =
-    rootStyles.getPropertyValue("--champagne").trim() || "#AE845E";
+    rootStyles.getPropertyValue("--champagne").trim() || "#C59B63";
 
   const colors = [
+    plum,
+    mauve,
+    plum,
     mauve,
     lavender,
-    mauve,
-    lavender,
-    mauve,
     champagne,
   ];
 

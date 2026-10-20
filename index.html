@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Zoya &amp; Zaid — Nikah Invitation</title>
-<meta content="You are warmly invited to celebrate the Nikah of Zoya Khan and Shaikh Zaid." name="description"/>
-<meta content="Zoya &amp; Zaid — Nikah Invitation" property="og:title"/>
-<meta content="You are warmly invited to celebrate the Nikah of Zoya Khan and Shaikh Zaid." property="og:description"/>
+<title>Sana &amp; Arbaz — Wedding &amp; Nikah Invitation</title>
+<meta content="Mrs. Shahnaz &amp; Mr. Riyaz Naik request the honour of your presence on the auspicious occasion of the wedding ceremony of their beloved daughter Sana with Arbaz." name="description"/>
+<meta content="Sana &amp; Arbaz — Wedding &amp; Nikah Invitation" property="og:title"/>
+<meta content="Mrs. Shahnaz &amp; Mr. Riyaz Naik request the honour of your presence on the auspicious occasion of the wedding ceremony of their beloved daughter Sana with Arbaz." property="og:description"/>
 <meta content="website" property="og:type"/>
 <link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="assets/css/fonts.css" rel="stylesheet"/>
@@ -23,8 +23,9 @@
 <span aria-hidden="true" class="music-bars"><i></i><i></i><i></i></span>
 <span id="musicLabel">Music</span>
 </button>
-<!-- Opening / hero -->
-<section aria-label="Tap to open the Baat Pakki invitation" class="hero is-closed" id="hero" role="button" tabindex="0">
+
+<!-- Opening / Hero -->
+<section aria-label="Tap to open the wedding invitation" class="hero is-closed" id="hero" role="button" tabindex="0">
 <video class="hero-video" id="introVideo" muted="" playsinline="" preload="metadata">
 <source id="introVideoSource" type="video/mp4"/>
 </video>
@@ -51,30 +52,41 @@
 <small data-bind="couple.groom.parents"></small>
 </div>
 </div>
-<p class="hero-invitation" data-bind="copy.invitation"></p>
-<p class="hero-closing" data-bind="copy.heroClosing"></p>
 </div>
 <a class="scroll-cue" href="#welcome">
 <span>Scroll</span>
 <i aria-hidden="true"></i>
 </a>
 </section>
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
-<!-- Welcome -->
+
+<!-- Welcome & Heavenly Blessings -->
 <section class="welcome-section section-pad" id="welcome">
 <div class="section-shell welcome-shell">
 <div class="welcome-copy reveal">
+<span class="eyebrow">Heavenly Blessings</span>
 <h2 data-bind="copy.welcomeTitle"></h2>
+<div aria-hidden="true" class="ornament"><i></i></div>
+
+<div class="heavenly-blessings-card">
+<span class="kicker">With the Heavenly blessings of</span>
+<p>Late Tahira &amp; Late Suleman Naik</p>
+<p>Late Halima &amp; Late Babamiya Pathan</p>
+</div>
+
 <p data-bind="copy.welcomeBody"></p>
 <div class="signature" id="welcomeSignature"></div>
 </div>
 </div>
 </section>
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
+
 <!-- Scratch-to-reveal date -->
 <section class="scratch-section section-pad" id="date">
 <div class="section-shell">
@@ -84,56 +96,41 @@
 <span aria-hidden="true" class="ornament"><i></i></span>
 </header>
 <div class="scratch-frame-shell reveal">
-<img alt="" aria-hidden="true" class="scratch-frame-overlay" src="assets/images/scratch-frame.webp">
+<img alt="" aria-hidden="true" class="scratch-frame-overlay" src="assets/images/scratch-frame.png"/>
 <div class="scratch-wrap" id="scratchCard">
 <div aria-live="polite" class="date-reveal">
-<span class="date-kicker">You’re Invited!</span>
+<span class="date-kicker">Insha Allah Nikah</span>
 <strong class="date-main" data-bind="wedding.date"></strong>
 <div class="date-day">
 <span data-bind="wedding.day"></span>
-<a aria-hidden="true">⬩</a>
+<span aria-hidden="true" style="opacity:0.6;margin:0 4px;">•</span>
 <span data-bind="wedding.time"></span>
 </div>
+<small data-bind="wedding.hijriDate" style="font-size:0.72rem;color:var(--mauve);letter-spacing:0.12em;margin-top:4px;text-transform:uppercase;font-weight:600;"></small>
 </div>
-<canvas aria-label="Scratch to reveal the Baat Pakki date. Press Enter to reveal." class="scratch-canvas" id="scratchCanvas" role="button" tabindex="0"></canvas>
+<canvas aria-label="Scratch to reveal the Nikah date. Press Enter to reveal." class="scratch-canvas" id="scratchCanvas" role="button" tabindex="0"></canvas>
 </div>
-</img></div>
+</div>
 <p class="scratch-note reveal" id="scratchNote">
-            Use your finger or cursor to uncover the moment.
-          </p>
+Use your finger or cursor to uncover the moment.
+</p>
 </div>
 </section>
-<div aria-hidden="true" class="floral-divider" hidden="">
-<img alt="" src="assets/images/floral-divider.webp"/>
-</div>
-<!-- Gallery -->
-<section aria-label="Gallery" class="gallery-section section-pad" hidden="">
-<div class="section-shell">
-<header class="section-heading reveal">
-<span class="eyebrow">Our story</span>
-<h2>Moments, softly held</h2>
-<span aria-hidden="true" class="ornament"><i></i></span>
-</header>
-<div class="gallery-frame reveal" id="galleryFrame">
-<div id="gallerySlides"></div>
-<span aria-hidden="true" class="gallery-corner gallery-corner-a"></span>
-<span aria-hidden="true" class="gallery-corner gallery-corner-b"></span>
-</div>
-<div aria-label="Choose gallery image" class="gallery-dots reveal" id="galleryDots"></div>
-</div>
-</section>
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
-<!-- Countdown -->
+
+<!-- Countdown to English Date -->
 <section class="countdown-section section-pad">
 <div class="section-shell countdown-shell">
 <header class="section-heading reveal">
-<span class="eyebrow">Until the Baat Pakki</span>
+<span class="eyebrow">Until the Nikah</span>
 <h2>Counting every heartbeat</h2>
 <span aria-hidden="true" class="ornament"><i></i></span>
+<p style="font-family:var(--font-display);font-size:1.15rem;font-style:italic;color:var(--plum);margin:12px auto 0;letter-spacing:0.04em;">Wednesday, 18th November 2026 • 11:00 AM</p>
 </header>
-<div aria-label="Baat Pakki countdown" class="countdown reveal">
+<div aria-label="Nikah countdown" class="countdown reveal">
 <div><strong id="countdownDays">00</strong><span>days</span></div>
 <div><strong id="countdownHours">00</strong><span>hours</span></div>
 <div><strong id="countdownMinutes">00</strong><span>minutes</span></div>
@@ -141,86 +138,97 @@
 </div>
 </div>
 </section>
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
-<!-- Program -->
-<section class="program-section section-pad">
+
+<!-- Program / Functions -->
+<section class="program-section section-pad" id="program">
 <div class="section-shell program-shell">
 <header class="section-heading reveal">
-<span class="eyebrow">The celebration</span>
-<h2>Our Baat Pakki</h2>
+<span class="eyebrow">The Celebration</span>
+<h2>Wedding Functions</h2>
 <span aria-hidden="true" class="ornament"><i></i></span>
 </header>
 <div class="timeline reveal" id="programTimeline"></div>
 </div>
 </section>
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
+
 <!-- Venue -->
-<section class="venue-section section-pad">
+<section class="venue-section section-pad" id="venue">
 <div class="section-shell">
 <div class="venue-card reveal">
-<span class="eyebrow">The venue</span>
+<span class="eyebrow">The Auspicious Venue</span>
 <div aria-hidden="true" class="venue-divider">
 <span>✦</span>
 </div>
 <h2 data-bind="venue.name"></h2>
 <p data-bind="venue.address"></p>
+
+<div class="venue-contacts">
+<a class="contact-pill" href="tel:+919403805932">
+<span>&#128222;</span> Riyaz Naik: 9403805932
+</a>
+<a class="contact-pill" href="tel:+917588616478">
+<span>&#128222;</span> Munaf: 7588616478
+</a>
+</div>
+
 <a class="venue-map-button" id="mapLink" rel="noreferrer" target="_blank">
-        View on Google Maps
-      </a>
+View on Google Maps
+</a>
 </div>
 </div>
 </section>
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
-<!-- Dress code -->
-<section class="dress-section section-pad">
-<div class="section-shell dress-shell">
-<div class="dress-copy reveal">
-<span class="eyebrow">Dress code</span>
-<h2 data-bind="dressCode.title"></h2>
-<p data-bind="dressCode.description"></p>
-</div>
-<div aria-label="Suggested colour palette" class="palette reveal" id="dressPalette"></div>
-</div>
-</section>
-<div aria-hidden="true" class="floral-divider" hidden="">
-<img alt="" src="assets/images/floral-divider.webp"/>
-</div>
-<!-- Pre-wedding events -->
-<section class="events-section section-pad" hidden="">
+
+<!-- Special Section: Our Little Invites -->
+<section class="little-invites-section section-pad" id="littleInvites">
 <div class="section-shell">
-<header class="section-heading reveal">
-<span class="eyebrow">The Festivities</span>
-<h2>Days filled with joy</h2>
-<span aria-hidden="true" class="ornament"><i></i></span>
-</header>
-<div class="event-list reveal" id="preWeddingEvents"></div>
+<div class="little-invites-card reveal">
+<span class="eyebrow">Sweetest Invitation</span>
+<h2 style="font-family:var(--font-script);font-size:clamp(2.4rem,8vw,3.6rem);color:var(--plum);margin:10px 0 14px;">Our Little Invites</h2>
+<div aria-hidden="true" class="ornament"><i></i></div>
+<div class="little-names">Azlaan &amp; Amairah</div>
+<p class="little-quote">&ldquo; Hamari Khalajaan ki shaadi me zarur ana! &rdquo;</p>
+</div>
 </div>
 </section>
-<div aria-hidden="true" class="floral-divider" hidden="">
-<img alt="" src="assets/images/floral-divider.webp"/>
-</div>
-<!-- Gifts -->
-<section class="gifts-section section-pad" hidden="">
-<div aria-hidden="true" class="gift-bloom"><i></i><i></i><i></i></div>
-<div class="gift-copy reveal">
-<span class="eyebrow">With all our hearts</span>
-<h2>Your presence is our present</h2>
-<p><span data-bind="copy.gifts"></span></p>
-</div>
-</section>
-<!-- RSVP -->
+
 <div aria-hidden="true" class="floral-divider">
-<img alt="" src="assets/images/floral-divider.webp"/>
+<img alt="" src="assets/images/floral-divider.png"/>
 </div>
+
+<!-- Special Section: With Best Compliments From -->
+<section class="compliments-section section-pad" id="compliments">
+<div class="section-shell">
+<div class="compliments-card reveal">
+<span class="eyebrow">Warm Regards</span>
+<h2>With Best Compliments From</h2>
+<div aria-hidden="true" class="ornament"><i></i></div>
+<p class="compliments-names">Jamatul Mulimeen Moor, Naik Families, Relative &amp; Friends</p>
+</div>
+</div>
+</section>
+
+<div aria-hidden="true" class="floral-divider">
+<img alt="" src="assets/images/floral-divider.png"/>
+</div>
+
 <!-- Closing -->
 <footer class="closing-section">
 <div class="closing-arch reveal">
+<span class="eyebrow" style="color:var(--champagne);letter-spacing:0.24em;margin-bottom:8px;">Insha Allah</span>
+<p class="bismillah" data-bind="copy.dua" lang="ar" style="font-size:clamp(1.15rem,3.6vw,1.8rem);line-height:1.6;"></p>
+<p data-bind="copy.duaTranslation" style="font-family:var(--font-display);font-size:0.95rem;font-style:italic;max-width:540px;margin:10px auto;color:var(--plum);"></p>
 <span aria-hidden="true" class="ornament light"><i></i></span>
 <h2 data-bind="copy.closing"></h2>
 <div class="closing-names" id="closingNames"></div>
