@@ -98,7 +98,7 @@ window.INVITATION_CONFIG = {
     {
       time: "04:00 PM",
       title: "Insha Allah Rasm-e-Mehendi",
-      note: "Tuesday, 17th November 2026 (7th Jamad-ul-Akhirah 1448 Hijri)\nThereafter dinner at the residence",
+      note: "Tuesday, 17th November 2026 (7th Jamad-ul-Akhirah 1448 Hijri)",
     },
     {
       time: "11:00 AM",
@@ -112,9 +112,9 @@ window.INVITATION_CONFIG = {
       name: "Insha Allah Rasm-e-Mehendi",
       date: "Tuesday, 17th November 2026",
       time: "04:00 PM",
-      location: "At Residence (Dinner thereafter)",
+      location: "At Residence",
       mapLink:
-        "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+415626/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
+        "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+416704/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
     },
     {
       name: "Insha Allah Nikah",
@@ -122,15 +122,15 @@ window.INVITATION_CONFIG = {
       time: "11:00 AM",
       location: "At Moor Muslimwadi (Lunch after nikah)",
       mapLink:
-        "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+415626/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
+        "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+416704/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
     },
   ],
 
   venue: {
     name: "At Moor Muslimwadi",
-    address: "Post Moor, Muslimwadi, Maharashtra 415626",
+    address: "Post Moor, Muslimwadi, Maharashtra 416704",
     mapUrl:
-      "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+415626/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
+      "https://www.google.com/maps/place/Muslimwadi,+Maharashtra+416704/@16.812732,73.3208511,16z/data=!3m1!4b1!4m6!3m5!1s0x3bea70f7508c784f:0xc13354a21e8f478c!8m2!3d16.8134866!4d73.3303407!16s%2Fg%2F12hljwr39?entry=ttu",
     contacts: [
       { name: "Riyaz Naik", phone: "9403805932" },
       { name: "Munaf", phone: "7588616478" },

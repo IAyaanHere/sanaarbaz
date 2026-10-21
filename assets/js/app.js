@@ -381,6 +381,13 @@ function showSlide(index) {
     const hero = select("#hero");
     const video = select("#introVideo");
     let opened = false;
+    let revealed = false;
+
+    function revealHeroContent() {
+      if (revealed) return;
+      revealed = true;
+      hero.classList.add("revealed");
+    }
 
     function openInvitation() {
       if (opened) return;
@@ -397,15 +404,27 @@ function showSlide(index) {
       video.volume = 0;
       video.play().catch(() => undefined);
 
+      video.addEventListener("timeupdate", () => {
+        if (video.currentTime >= 6.2) {
+          revealHeroContent();
+        }
+      });
+      video.addEventListener("ended", revealHeroContent);
+
+      video.addEventListener("playing", () => {
+        window.setTimeout(revealHeroContent, 7000);
+      }, { once: true });
+      window.setTimeout(revealHeroContent, 10000);
+
       window.setTimeout(() => {
         createPetalShower({ mode: "hero" });
       }, 3500);
 
       const audio = select("#backgroundMusic");
 
-audio.play()
-  .then(updateMusicControl)
-  .catch(updateMusicControl);
+      audio.play()
+        .then(updateMusicControl)
+        .catch(updateMusicControl);
     }
 
     hero.addEventListener("click", openInvitation);

@@ -203,11 +203,28 @@ main {
     transparent 100%
   );
   opacity: 0;
-  transition: opacity 1.25s ease 6.5s;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 1.25s ease;
+}
+
+.hero.is-closed .hero-veil,
+.hero:not(.is-open) .hero-veil {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.hero.is-open.revealed .hero-veil {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero.is-open:not(.revealed) .hero-veil {
+  transition: opacity 1.25s ease 7.5s;
 }
 
 .hero.is-open .hero-veil {
-  opacity: 1;
+  visibility: visible;
 }
 
 .hero-geometry {
@@ -867,6 +884,14 @@ main {
   letter-spacing: -.03em;
   line-height: 1;
   color: var(--plum);
+}
+
+.date-hijri {
+  font-size: clamp(0.48rem, 2.2vw, 0.56rem) !important;
+  letter-spacing: 0.04em !important;
+  max-width: 85%;
+  margin: 4px auto 0;
+  display: inline-block;
 }
 
 .scratch-canvas {
@@ -1925,6 +1950,16 @@ background: radial-gradient(
   opacity: .87;
   text-transform: uppercase;
   color: var(--champagne);
+}
+
+.hero.is-open.revealed .hero-content {
+  visibility: visible;
+  pointer-events: auto;
+  animation: hero-content-reveal 1.4s cubic-bezier(.16,.75,.25,1) 0.1s both;
+}
+
+.hero.is-open.revealed .couple-names {
+  animation: hero-names-reveal 1.15s cubic-bezier(.16,.75,.25,1) 0.4s both;
 }
 
 .hero.is-open .hero-content {
